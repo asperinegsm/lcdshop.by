@@ -1,10 +1,25 @@
+:root {
+--color-white: #fff;
+      --color-woodsmoke: #141516;
+  
+  --color-background: var(--color-white);
+
+}
+
+[data-theme=dark] {
+      --color-background: var(--color-woodsmoke);
+
+}
+
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap&subset=cyrillic");
 html {
   height: 100%;
 }
+  
+      
 
 body {
-  background-color: #fff;
+  background-color: var(--color-background);
   font-family: "Ubuntu";
   font-weight: 400;
   font-size: 15px;
