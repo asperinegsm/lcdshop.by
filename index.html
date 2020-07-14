@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru">
+<html lang="ru" data-theme="light">
 
 <head>
     <!-- Required meta tags -->
@@ -9,6 +9,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    
+    <script type="text/javascript">
+    (function(h){var ct=localStorage.getItem('theme');
+    if (ct!==null){h.setAttribute('data-theme',ct)}else if
+    (!window.matchMedia('(prefers-color-scheme: light)').matches){
+    h.setAttribute('data-theme','dark')};})(document.documentElement);
+    </script>
+    
     <title>LCDShop.by — У нас только качествынные диплеи</title>
     <meta name="description"
         content="Продажа аксессуаров Востановленные модули для телефонов Apple, Samsung, Xiaomi, Huawei, Nokia, Sony и многие другие.">
