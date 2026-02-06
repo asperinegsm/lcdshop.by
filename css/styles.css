@@ -295,3 +295,9 @@ h1 { margin: 0 0 10px; line-height: 1.1; font-size: clamp(26px, 3.3vw, 44px); }
   .features { grid-template-columns: 1fr 1fr; }
   .contactGrid { grid-template-columns: 1fr 1fr 1fr; }
 }
+/* телефоны в шапке — столбиком */
+.header__contacts .contact__value a {
+  display: block;
+  white-space: nowrap;
+  line-height: 1.25;
+}
